@@ -27,7 +27,7 @@ public class RewardsControllerTest {
 
         when(rewardService.calculateRewards(purchaseAmt)).thenReturn(expectedRewards);
 
-        ResponseEntity<Integer> response = restTemplate.postForEntity("/employees", purchaseAmt, Integer.class);
+        ResponseEntity<Integer> response = restTemplate.postForEntity("/calculateRewards", purchaseAmt, Integer.class);
 
         assertEquals(HttpStatus.OK, response.getStatusCode());
         assertEquals(expectedRewards, response.getBody().intValue());
@@ -40,7 +40,7 @@ public class RewardsControllerTest {
 
         when(rewardService.calculateRewards(purchaseAmt)).thenReturn(expectedRewards);
 
-        ResponseEntity<Integer> response = restTemplate.postForEntity("/employees", purchaseAmt, Integer.class);
+        ResponseEntity<Integer> response = restTemplate.postForEntity("/calculateRewards", purchaseAmt, Integer.class);
 
         assertEquals(HttpStatus.OK, response.getStatusCode());
         assertEquals(expectedRewards, response.getBody().intValue());
@@ -53,7 +53,7 @@ public class RewardsControllerTest {
 
         when(rewardService.calculateRewards(purchaseAmt)).thenReturn(expectedRewards);
 
-        ResponseEntity<Integer> response = restTemplate.postForEntity("/employees", purchaseAmt, Integer.class);
+        ResponseEntity<Integer> response = restTemplate.postForEntity("/calculateRewards", purchaseAmt, Integer.class);
 
         assertEquals(HttpStatus.OK, response.getStatusCode());
         assertEquals(expectedRewards, response.getBody().intValue());
@@ -66,7 +66,7 @@ public class RewardsControllerTest {
 
         when(rewardService.calculateRewards(purchaseAmt)).thenReturn(expectedRewards);
 
-        ResponseEntity<Integer> response = restTemplate.postForEntity("/employees", purchaseAmt, Integer.class);
+        ResponseEntity<Integer> response = restTemplate.postForEntity("/calculateRewards", purchaseAmt, Integer.class);
 
         assertEquals(HttpStatus.OK, response.getStatusCode());
         assertEquals(expectedRewards, response.getBody().intValue());
@@ -79,7 +79,7 @@ public class RewardsControllerTest {
 
         when(rewardService.calculateRewards(purchaseAmt)).thenReturn(expectedRewards);
 
-        ResponseEntity<Integer> response = restTemplate.postForEntity("/employees", purchaseAmt, Integer.class);
+        ResponseEntity<Integer> response = restTemplate.postForEntity("/calculateRewards", purchaseAmt, Integer.class);
 
         assertEquals(HttpStatus.OK, response.getStatusCode());
         assertEquals(expectedRewards, response.getBody().intValue());

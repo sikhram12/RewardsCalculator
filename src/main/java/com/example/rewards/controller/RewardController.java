@@ -15,7 +15,7 @@ public class RewardController {
 	@Autowired
 	RewardService rewardService;
 	
-	@PostMapping("/employees")
+	@PostMapping("/calculateRewards")
 	public int generateRewards(@RequestBody int purchaseAmt) {
 		
 		int rewards = rewardService.calculateRewards(purchaseAmt);
